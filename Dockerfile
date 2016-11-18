@@ -75,7 +75,7 @@ RUN python get-pip.py
 RUN rm get-pip.py
 
 #Instal livffi needed for image match
-RUN apt-get install -y libffi-dev
+RUN apt-get install -y libffi libffi-dev
 
 # Install Numpy
 RUN pip install -v numpy==1.11.1
