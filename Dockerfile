@@ -74,6 +74,8 @@ RUN curl -s -L https://bootstrap.pypa.io/get-pip.py > get-pip.py
 RUN python get-pip.py
 RUN rm get-pip.py
 
+#Instal livffi needed for image match
+RUN apt-get install -y libffi-dev
 
 # Install Numpy
 RUN pip install -v numpy==1.11.1
